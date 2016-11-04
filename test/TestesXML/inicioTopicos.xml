@@ -1,0 +1,4 @@
+<dataset>
+	<TOPICO id_topico="1" titulo="Início" conteudo="Este é o primeiro tópico criado." login="cassiano"/>
+        <TOPICO id_topico="2" titulo="Tópico 2" conteudo="bla bla bla" login="gisele"/>
+</dataset>
