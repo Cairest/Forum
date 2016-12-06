@@ -1,0 +1,7 @@
+<dataset>
+	<USUARIO LOGIN="cassiano" EMAIL="cassiano@gmail.com" NOME="Cassiano Teixeira" SENHA="senhaCassiano" PONTOS="54"/>
+	<USUARIO LOGIN="claudia" EMAIL="claudia@hotmail.com" NOME="Claudia Silva" SENHA="senhaClaudia" PONTOS="250"/>
+	<USUARIO LOGIN="gisele" EMAIL="gisele@yahoo.com" NOME="Gisele Ferreira" SENHA="senhaGisele" PONTOS="200"/>
+	<USUARIO LOGIN="joao" EMAIL="joao@gmail.com" NOME="Joao Silva" SENHA="senhaJoao" PONTOS="100"/>
+	<USUARIO LOGIN="jose" EMAIL="jose@gmail.com" NOME="Jose Aires" SENHA="senhaJose" PONTOS="70"/>
+</dataset>

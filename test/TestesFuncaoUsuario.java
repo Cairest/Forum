@@ -19,7 +19,7 @@ import org.junit.Before;
  *
  * @author 1539917
  */
-public class TestesFuncao {
+public class TestesFuncaoUsuario {
     
     JdbcDatabaseTester jdt;
     

@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-@WebServlet(urlPatterns = {"/login"})
+@WebServlet("/login")
 public class LoginServlet extends HttpServlet {
 
     
@@ -25,8 +25,9 @@ public class LoginServlet extends HttpServlet {
         Funcao fl = new Funcao();
         try {
             String nomeUsuario = fl.logar(login, senha);
-            request.setAttribute("nome", nomeUsuario);
-            request.getRequestDispatcher("inicioForum.jsp").forward(request, response);
+            request.getSession().setAttribute("nome", nomeUsuario);
+            response.sendRedirect(response.encodeRedirectURL(request.getContextPath() + "/listaTopicosInicio"));
+            
         } catch (Exception ex) {
             request.setAttribute("mensagem", "Login e/ou senha inválido(s)/a");
             request.getRequestDispatcher("index.jsp").forward(request, response);

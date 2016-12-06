@@ -51,6 +51,10 @@ public class Topico {
         this.login = login;
     }
     
-    
+    public Topico(String titulo, String conteudo, String login) {
+        this.titulo = titulo;
+        this.conteudo = conteudo;
+        this.login = login;
+    }    
     
 }

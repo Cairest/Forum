@@ -16,9 +16,11 @@ import org.dbunit.dataset.FilteredDataSet;
 import org.dbunit.dataset.IDataSet;
 import org.dbunit.dataset.filter.ITableFilter;
 import org.dbunit.dataset.xml.FlatXmlDataSet;
-import org.dbunit.util.fileloader.FlatXmlDataFileLoader;
+import org.dbunit.util.CollectionsHelper;
 import org.junit.Before;
 import org.junit.Test;
+
+import org.dbunit.util.fileloader.FlatXmlDataFileLoader;
 import static org.junit.Assert.*;
 import usuario.Usuario;
 
@@ -35,12 +37,13 @@ public class TestesUsuarioDAO {
     public void setUp() throws Exception {
         jdt = new JdbcDatabaseTester("org.postgresql.Driver", "jdbc:postgresql://localhost/forum", "postgres", "admin");
         FlatXmlDataFileLoader loader = new FlatXmlDataFileLoader();
+        
         jdt.setDataSet(loader.load("/TestesXML/inicioUsuarios.xml"));
         
         IDatabaseConnection conn = new DatabaseConnection(ConexaoDB.class.newInstance().getConnection());
         ITableFilter filter = new DatabaseSequenceFilter(conn);
         IDataSet dataset = new FilteredDataSet(filter, conn.createDataSet());
-        FlatXmlDataSet.write(dataset, new FileOutputStream("/TestesXML/inicioUsuarios.xml"));
+        FlatXmlDataSet.write(dataset, new FileOutputStream("test/TestesXML/inicioUsuarios.xml"));
         
         jdt.onSetup();  
         

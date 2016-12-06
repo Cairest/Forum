@@ -8,6 +8,23 @@ public class Comentario {
     private String login;
     private int id_topico;
 
+    public Comentario(String comentario, String login, int id_topico) {
+        this.comentario = comentario;
+        this.login = login;
+        this.id_topico = id_topico;
+    }
+
+    public Comentario(int id_comentario, String comentario, String login, int id_topico) {
+        this.id_comentario = id_comentario;
+        this.comentario = comentario;
+        this.login = login;
+        this.id_topico = id_topico;
+    }
+    
+    
+    
+    
+
     public int getId_comentario() {
         return id_comentario;
     }

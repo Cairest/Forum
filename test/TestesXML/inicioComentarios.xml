@@ -7,7 +7,6 @@
     <usuario login="jose" email="jose@gmail.com" nome="Jose Aires" senha="senhaJose" pontos="70"/>
     <topico id_topico="1" titulo="Início" conteudo="Este é o primeiro tópico criado." login="cassiano"/>
     <topico id_topico="2" titulo="Tópico 2" conteudo="bla bla bla" login="gisele"/>
-    <topico id_topico="3" titulo="Tópico Ajuda" conteudo="Preciso de ajuda" login="joao"/>
     <comentario id_comentario="1" comentario="Comentario para o topico inicial" login="cassiano" id_topico="1"/>
     <comentario id_comentario="2" comentario="Muito bom esse topico" login="gisele" id_topico="1"/>
     <comentario id_comentario="3" comentario="Tudo errado." login="cassiano" id_topico="2"/>
